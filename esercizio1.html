@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esercizio1</title>
+  <!--Attraverso l'attributo style vengono modificati i colori dei testi dei paragrafi e delle liste,e il colore di sfondo del body -->
+    <style>
+    body {background-color: black;}
+    p {color: white;}
+    ol {color:white;}
+     ul {color:white;}
+     @media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+  </style>
+  <h1 style="font-family:courier; color:white;">La top 10 dei calciatori piu' forti della storia </h1>
+</head>
+<!-- Con l'attributo style viene anche modificato il font dell'heading -->
+<body>
+  <p>Benvenuti in questa pagina in cui scoprirete quelli che per molti sono considerati i 10 migliori calciatori di sempre </p>
+<!-- Vengono inserite 2 liste ordinate,di cui una inizierà dal numero 6 attraverso l'attributo start nel tag <ol> -->
+  <p>Top 1-5</p>
+  <ol>
+     <li>Messi</li>
+     <li>Maradona</li>
+     <li>CR7</li>
+     <li>Ronaldo "Il fenomeno"</li>
+     <li>Ronaldinho</li>
+  </ol>
+  
+  <p>Top 6-10 </p>
+  <ol start="6">
+      <li>Pele'</li>
+      <li>Cruijff</li>
+      <li>Zidane </li>
+      <li>Maldini</li>
+      <li>Baresi </li>
+  </ol>    
+  <p>La clasifica e' stata gentilmente stilata da: <p>
+  <ul>
+      <li>Bergamini Christian</li>
+      <li>Morandi Luigi</li>
+      <li>Motta Nicolo'</li>
+  </ul>    
+  <!-- Viene inoltre inserita una lista non ordinata e successivamente 2 immagini,inserendo l'attributo alt e modificando larghezza e altezza con width e height -->
+  
+ <p>Menzioni d'onore anche per Javier Zanetti e Francesco Totti </p>
+ <img src="https://upload.wikimedia.org/wikipedia/it/0/08/Francesco_Totti_-_AS_Roma_1996-97.jpg "  alt="Totti" width="200px" height="200px">
+ <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Javier_Zanetti_-_Inter_Mailand_%283%29.jpg " alt="Zanetti" width="200px" height="200px">
+ 
+<p>immagini ricavate da:</p>
+<a href="https://www.wikipedia.org/ "> Wikipedia </a>
+<!-- Viene inserito il link esterno da cui sono state prese le immagini -->
+<p>Inserisci i tuoi dati e quello che per te e' il calciatore piu' forte della storia</p>
+<p>Inserisci nome e cognome: </p>
+<form action="/action_page.php">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome"  ><br>
+  <label for="cognome">Cognome:</label><br>
+  <input type="text" id="cognome" name="cognome"><br><br>
+  <input type="submit" value="Invio">
+  </form>
+  <p>Inserisci il tuo indirizzo email: </p>
+  <form action="/action_page.php">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+   <input type="submit" value="Invio">
+  </form>
+  
+  
+  <form action="/action_page.php">
+  <textarea name="messaggio" rows="10" cols="30">Il giocatore piu' forte della storia e': </textarea>
+  <br><br>
+  <input type="submit" value="Invio">
+</form>
+<!--Attraverso l'attributo form è possibile inserire in campi di imput i propri dati personali ed inoltre con l'attributo textarea si può scrivere un messaggio -->
+</body>
+</html>
