@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Responsive Design 1/2 -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Stili e formattazione -->
+ <style>
+ table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+  body {background-color: black}
+  h1 {
+  color: red;
+  font-family: verdana;
+  font-size: 200%;
+  border:2px solid white;
+  padding: 50px;
+  margin: 30px;
+  }
+  p {
+      color: white;
+      font-family: courier;
+    font-size: 90%;
+
+  }
+ 
+  </style>
+ <!--Struttura iniziale -->
+ <style>
+   @media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <!-- Titolo -->
+  <title>Bergamini Christian</title>
+  <!-- introduzione e intestazione -->
+  <h1>La Musica Rap</h1>
+  
+</head>
+<body>
+<!-- Elementi e Attributi -->
+<div style="background-color:grey;color:black;padding:40px;">
+  <p>La Musica Rap e' un genere musicale nato nei quartieri del bronx in <span style="color:red;font-weight:bold;">America</span> negli anni 70.
+  Questo genere deriva dall'hip hop e ha introdotto le tematiche di strada raccontate dai rapper
+  cantando su una base(beat) che nella maggior parte dei casi e' prodotta da un DJ o da un beatmaker.</p>
+  </div>
+  <!-- Citazioni e commenti -->
+<p>Molti rapper definiscono il rap come fonte di salvezza,come nel caso di Eminem,uno (se non il) dei migliori rapper della scena mondiale: </p>
+<blockquote
+  citie="https://www.frasicelebri.it/frase/eminem-a-volte-sento-come-se-il-rap-fosse-quasi-la/?utm_source=internal&utm_medium=link&utm_campaign=phrase_snippet_wholetext">
+  A volte sento come se  il rap fosse quasi la chiave per fermare il razzismo. 
+  </blockquote>
+  <p>Il rap ha dato vita anche ad altri generi musicali,come la <a href="https://it.wikipedia.org/wiki/Trap_(genere_musicale) ">Trap</a> e la <a href="https://it.wikipedia.org/wiki/Drill">Drill</a>,i cui maggiori esponenti in America sono Travis Scott,Drake e Pop Smoke</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Travis_Scott_-_Openair_Frauenfeld_2019_08.jpg/257px-Travis_Scott_-_Openair_Frauenfeld_2019_08.jpg" alt="Travis Scott" width="170 px" height="170px">
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/af/Pop_Smoke_in_2020_%281%29_%282%29_%281%29.jpg " alt=" Pop Smoke" width="170 px" height="170px">
+  <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eminem_-_Concert_for_Valor_in_Washington%2C_D.C._Nov._11%2C_2014_%282%29_%28Cropped%29.jpg/250px-Eminem_-_Concert_for_Valor_in_Washington%2C_D.C._Nov._11%2C_2014_%282%29_%28Cropped%29.jpg" alt="Eminem" width="170 px" height="170px">
+ <!-- Responsive Design 2/2 -->
+ <div class="container-fluid p-4 bg-primary text-black text-center"> <!--9.Blocchi.Class -->
+  <h1> Rap  </h1>
+</div>
+  
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>America</h3>
+      <p>Bronx</p>
+     
+    </div>
+    <div class="col-sm-4">
+      <h3>Italia</h3>
+      <p>Roma </p>
+     
+    </div>
+      </div>
+</div>
+
+<!-- Tabelle e liste -->
+<h3>Rapper in Italia</h3>
+<table>
+   <tr>
+       <th>Rapper
+       <ol>
+       <li> under 23   </li>
+       <li> under 35   </li>
+       <li> over 40    </li>
+       </ol>
+       </th>
+       <th>Provenienza
+       <ul>
+       <li>Nord  </li>
+       <li>Centro </li>
+       <li>Sud </li>
+       </ul>
+       </th>
+       <th>Nome Reale</th>
+   </tr>
+   
+   <tr>
+       <td>Geolier-under 23</td>
+       <td>Sud</td>
+       <td>Emanuele Palumbo</td>
+   </tr> 
+   
+   <tr>
+       <td>Ernia-under 35</td>
+       <td>Nord</td>
+       <td>Matteo Professione</td>
+   </tr>  
+    <tr>
+       <td>Thasup-under 23</td>
+       <td>Centro</td>
+       <td>Davide Mattei</td>
+   </tr>  
+   </table>
+   <!-- Form e Elementi del Form -->
+   <h1>Inserire Nome e Cognome:</h1>
+<form action="/action_page.php">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome"><br>
+  <label for="cognome">Cognome:</label><br>
+  <input type="text" id="cognome" name="cognome"><br><br>
+  <input type="submit" value="Invio">
+    <input type="reset" value="Ripristina">
+
+</form>
+<h1>Inserire una email e una password</h1>
+<form action="/action_page.php">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br> <!--9.Blocchi:ID -->
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <input type="submit" value="Invio">
+</form>
+<form action="/action_page.php">
+  <label for="birthdaytime">Data e ora di nascita :</label>
+  <input type="datetime-local" id="nascita" name="nascita">
+  <input type="button" onclick="alert('Hello World!')" value="Clicca per confermare">
+</form>
+   <!-- Entita',Simboli,Emoticon -->
+   <p> Il segno minore: &lt; </p>
+  <p> &#128150;&#128420;&#129313;(milanista pagliaccio) </p>
+</body>
+</html>
